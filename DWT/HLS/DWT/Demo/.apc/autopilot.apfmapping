@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="DWT.cpp" path="E:\FPGA\Xilinx\HLS\DWT\Demo\source\DWT.cpp"/>
+    <originFiles name="DWT.h" path="E:\FPGA\Xilinx\HLS\DWT\Demo\source\DWT.h"/>
+    <originFiles name="DWT_test.txt" path="E:\FPGA\Xilinx\HLS\DWT\Demo\source\DWT_test.txt"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_DWT.cpp" path="E:\FPGA\Xilinx\HLS\DWT\Demo\source\tb_DWT.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

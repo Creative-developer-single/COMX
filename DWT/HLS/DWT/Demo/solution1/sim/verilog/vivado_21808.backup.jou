@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 18 21:19:49 2024
+# Process ID: 21808
+# Current directory: E:/FPGA/Xilinx/HLS/DWT/Demo/solution1/sim/verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19072 E:\FPGA\Xilinx\HLS\DWT\Demo\solution1\sim\verilog\DWT.wdb
+# Log file: E:/FPGA/Xilinx/HLS/DWT/Demo/solution1/sim/verilog/vivado.log
+# Journal file: E:/FPGA/Xilinx/HLS/DWT/Demo/solution1/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {E:\FPGA\Xilinx\HLS\DWT\Demo\solution1\sim\verilog\DWT.wdb}
+open_wave_config E:/FPGA/Xilinx/HLS/DWT/Demo/solution1/sim/verilog/DWT.wcfg
+close_sim

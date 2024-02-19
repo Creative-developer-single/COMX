@@ -1,0 +1,13 @@
+verilog xil_defaultlib  \
+"../../../ipstatic/hdl/verilog/DWT_data_in.v" \
+"../../../ipstatic/hdl/verilog/DWT_data_input.v" \
+"../../../ipstatic/hdl/verilog/DWT_data_output.v" \
+"../../../ipstatic/hdl/verilog/DWT_fadd_32ns_32nbkb.v" \
+"../../../ipstatic/hdl/verilog/DWT_filter_g.v" \
+"../../../ipstatic/hdl/verilog/DWT_filter_h.v" \
+"../../../ipstatic/hdl/verilog/DWT_fmul_32ns_32ncud.v" \
+"../../../ipstatic/hdl/verilog/DWT.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

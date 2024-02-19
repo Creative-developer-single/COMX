@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/Xilinx/tests/DWT_test/project_1/project_1.ip_user_files/ipstatic/hdl/verilog/DWT_data_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DWT_data_in_ram
+INFO: [VRFC 10-311] analyzing module DWT_data_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/Xilinx/tests/DWT_test/project_1/project_1.ip_user_files/ipstatic/hdl/verilog/DWT_data_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DWT_data_input_ram
+INFO: [VRFC 10-311] analyzing module DWT_data_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/Xilinx/tests/DWT_test/project_1/project_1.ip_user_files/ipstatic/hdl/verilog/DWT_data_output.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DWT_data_output_ram
+INFO: [VRFC 10-311] analyzing module DWT_data_output
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/Xilinx/tests/DWT_test/project_1/project_1.ip_user_files/ipstatic/hdl/verilog/DWT_fadd_32ns_32nbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DWT_fadd_32ns_32nbkb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/Xilinx/tests/DWT_test/project_1/project_1.ip_user_files/ipstatic/hdl/verilog/DWT_filter_g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DWT_filter_g_rom
+INFO: [VRFC 10-311] analyzing module DWT_filter_g
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/Xilinx/tests/DWT_test/project_1/project_1.ip_user_files/ipstatic/hdl/verilog/DWT_filter_h.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DWT_filter_h_rom
+INFO: [VRFC 10-311] analyzing module DWT_filter_h
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/Xilinx/tests/DWT_test/project_1/project_1.ip_user_files/ipstatic/hdl/verilog/DWT_fmul_32ns_32ncud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DWT_fmul_32ns_32ncud
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/Xilinx/tests/DWT_test/project_1/project_1.ip_user_files/ipstatic/hdl/verilog/DWT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DWT
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/Xilinx/tests/DWT_test/project_1/sim/tb_DWT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DWT
