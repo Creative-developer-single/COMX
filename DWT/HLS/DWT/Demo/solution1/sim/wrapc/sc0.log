@@ -1,0 +1,5 @@
+   Build using "D:/Vivado/Vivado/2018.3/msys64/mingw64/bin/g++"
+   Compiling apatb_DWT.cpp
+   Compiling DWT.cpp_pre.cpp.tb.cpp
+   Compiling tb_DWT.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

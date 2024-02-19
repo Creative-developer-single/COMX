@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.ip_user_files/ipstatic/hdl/ip/DWT_ap_fadd_2_full_dsp_32.vhd" \
+"../../../../project_1.ip_user_files/ipstatic/hdl/ip/DWT_ap_fmul_1_max_dsp_32.vhd" \
+"../../../../project_1.srcs/sources_1/ip/DWT_0/sim/DWT_0.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.ip_user_files/ipstatic/hdl/verilog/DWT_data_in.v" \
+"../../../../project_1.ip_user_files/ipstatic/hdl/verilog/DWT_data_input.v" \
+"../../../../project_1.ip_user_files/ipstatic/hdl/verilog/DWT_data_output.v" \
+"../../../../project_1.ip_user_files/ipstatic/hdl/verilog/DWT_fadd_32ns_32nbkb.v" \
+"../../../../project_1.ip_user_files/ipstatic/hdl/verilog/DWT_filter_g.v" \
+"../../../../project_1.ip_user_files/ipstatic/hdl/verilog/DWT_filter_h.v" \
+"../../../../project_1.ip_user_files/ipstatic/hdl/verilog/DWT_fmul_32ns_32ncud.v" \
+"../../../../project_1.ip_user_files/ipstatic/hdl/verilog/DWT.v" \
+"../../../../sim/tb_DWT.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

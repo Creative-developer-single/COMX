@@ -1,0 +1,11 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="DWT" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_ovld" value="" positionalBoolean="mode"/>
+                <option name="port" value="read_ready" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

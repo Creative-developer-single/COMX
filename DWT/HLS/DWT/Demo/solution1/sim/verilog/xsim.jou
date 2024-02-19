@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 18 10:31:27 2024
+# Process ID: 3140
+# Current directory: E:/FPGA/Xilinx/HLS/DWT/Demo/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/DWT/xsim_script.tcl}
+# Log file: E:/FPGA/Xilinx/HLS/DWT/Demo/solution1/sim/verilog/xsim.log
+# Journal file: E:/FPGA/Xilinx/HLS/DWT/Demo/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/DWT/xsim_script.tcl
+source DWT.tcl

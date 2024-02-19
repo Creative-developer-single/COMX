@@ -1,0 +1,23 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "DWT",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_ovld",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "read_ready",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        }]
+    }]}
