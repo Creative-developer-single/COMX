@@ -1,0 +1,1972 @@
+INFO-FLOW: Workspace E:/FPGA/Xilinx/HLS/CNN/minst/solution1 opened at Thu Feb 22 01:24:02 +0800 2024
+Execute     config_clock -quiet -name default -period 15 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 15ns.
+Execute     config_clock -quiet -name default -uncertainty 1.875 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.875ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-2 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-2'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_compile -no_signed_zeros=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+Execute     config_compile -unsafe_math_optimizations=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+Execute     config_sdx -optimization_level=none 
+Execute       get_config_export -vivado_synth_design_args 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_synth_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute       get_config_bind -effort 
+Execute       get_config_schedule -effort 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_sdx -optimization_level=none 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+Execute       config_sdx -optimization_level=none 
+Execute         get_config_export -vivado_synth_design_args 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_synth_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute         get_config_bind -effort 
+Execute         get_config_schedule -effort 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -auto_prefix 
+Execute       get_config_rtl -enable_maxiConservative 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute     config_schedule -effort=medium 
+Execute     config_schedule -relax_ii_for_timing=0 
+Execute     config_bind -effort=medium 
+Command   open_solution done; 0.211 sec.
+Execute   set_part xc7z020clg400-2 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-2 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     get_default_platform 
+Execute   create_clock -period 15 -name default 
+Execute     config_clock -quiet -name default -period 15 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 15ns.
+Execute   config_compile -no_signed_zeros=0 -unsafe_math_optimizations=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+Execute   config_sdx -optimization_level none -target none 
+Execute     get_config_export -vivado_synth_design_args 
+Execute     get_config_export -vivado_impl_strategy 
+Execute     get_config_export -vivado_synth_strategy 
+Execute     get_config_export -vivado_phys_opt 
+Execute     get_config_bind -effort 
+Execute     get_config_schedule -effort 
+Execute     get_config_compile -pipeline_loops 
+Execute     get_config_compile -name_max_length 
+Execute     get_config_schedule -relax_ii_for_timing 
+Execute     get_config_schedule -enable_dsp_full_reg 
+Execute     get_config_rtl -register_reset_num 
+Execute     get_config_rtl -auto_prefix 
+Execute     get_config_rtl -enable_maxiConservative 
+Execute     get_config_interface -m_axi_addr64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute     set_clock_uncertainty default 
+Execute   config_schedule -effort medium -relax_ii_for_timing=0 
+Execute   config_bind -effort medium 
+Execute   source ./minst/solution1/directives.tcl 
+Execute     set_directive_pipeline Conv1_layer/Conv1_layer_label0 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute     set_directive_pipeline Conv2_layer/Conv2_layer_label12 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute     set_directive_pipeline Flatten_layer/Flatten_layer_label4 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     config_compile -blackbox  
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+WARNING: [HLS 200-40] Skipped source file 'test_png1.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'minst/source/DataLoader.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling minst/source/DataLoader.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted minst/source/DataLoader.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Vivado/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "minst/source/DataLoader.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp" 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E minst/source/DataLoader.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp
+Command       clang done; 0.454 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Vivado/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp"  -o "E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/useless.bc
+Command       clang done; 0.446 sec.
+INFO-FLOW: Done: GCC PP time: 1 seconds per iteration
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp std=gnu++98 -directive=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp std=gnu++98 -directive=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/all.directive.json -quiet -fix-errors E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/xilinx-dataflow-lawyer.DataLoader.pp.0.cpp.diag.yml E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/xilinx-dataflow-lawyer.DataLoader.pp.0.cpp.out.log 2> E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/xilinx-dataflow-lawyer.DataLoader.pp.0.cpp.err.log 
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/tidy-3.1.DataLoader.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/tidy-3.1.DataLoader.pp.0.cpp.out.log 2> E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/tidy-3.1.DataLoader.pp.0.cpp.err.log 
+Command         ap_eval done; 0.177 sec.
+Execute         ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/xilinx-legacy-rewriter.DataLoader.pp.0.cpp.out.log 2> E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/xilinx-legacy-rewriter.DataLoader.pp.0.cpp.err.log 
+Command       tidy_31 done; 0.252 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.4 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.bc" 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.bc
+Command       clang done; 0.464 sec.
+INFO: [HLS 200-10] Analyzing design file 'minst/source/test.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling minst/source/test.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted minst/source/test.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Vivado/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "minst/source/test.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp" 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E minst/source/test.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp
+Command       clang done; 0.456 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Vivado/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp"  -o "E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/useless.bc
+Command       clang done; 0.456 sec.
+INFO-FLOW: Done: GCC PP time: 1 seconds per iteration
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp std=gnu++98 -directive=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp std=gnu++98 -directive=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/all.directive.json -quiet -fix-errors E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.183 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/xilinx-dataflow-lawyer.test.pp.0.cpp.diag.yml E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/xilinx-dataflow-lawyer.test.pp.0.cpp.out.log 2> E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/xilinx-dataflow-lawyer.test.pp.0.cpp.err.log 
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/tidy-3.1.test.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/tidy-3.1.test.pp.0.cpp.out.log 2> E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/tidy-3.1.test.pp.0.cpp.err.log 
+Command         ap_eval done; 0.118 sec.
+Execute         ap_eval exec -ignorestderr D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/xilinx-legacy-rewriter.test.pp.0.cpp.out.log 2> E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/xilinx-legacy-rewriter.test.pp.0.cpp.err.log 
+Command       tidy_31 done; 0.2 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.5 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.107 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot" -I "D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.bc" 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Vivado/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Vivado/Vivado/2018.3/common/technology/autopilot -I D:/Vivado/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.bc
+Command       clang done; 0.47 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/DataLoader.g.bc E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/test.g.bc -hls-opt -except-internalize run -LD:/Vivado/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 0.524 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 104.961 ; gain = 19.652
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 104.961 ; gain = 19.652
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.pp.bc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LD:/Vivado/Vivado/2018.3/win64/lib -lfloatconversion -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.237 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top run -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.g.0.bc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 113.996 ; gain = 28.688
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.g.1.bc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'FC1_layer' into 'run' (minst/source/test.cpp:306) automatically.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.g.2.prechk.bc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 119.250 ; gain = 33.941
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.g.1.bc to E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.o.1.bc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Flatten_layer_label4' (minst/source/test.cpp:224) in function 'Flatten_layer' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Conv2_layer_label12' (minst/source/test.cpp:169) in function 'Conv2_layer' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Conv1_layer_label0' (minst/source/test.cpp:111) in function 'Conv1_layer' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (minst/source/test.cpp:224) in function 'Flatten_layer' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (minst/source/test.cpp:225) in function 'Flatten_layer' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (minst/source/test.cpp:170) in function 'Conv2_layer' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1.1' (minst/source/test.cpp:171) in function 'Conv2_layer' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Conv2_layer_label2' (minst/source/test.cpp:173) in function 'Conv2_layer' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (minst/source/test.cpp:112) in function 'Conv1_layer' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Conv1_layer_label1' (minst/source/test.cpp:114) in function 'Conv1_layer' completely with a factor of 5.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.0' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.0.0' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.0.1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.0.2' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.0.3' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.0.4' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.1.0' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.1.1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.1.2' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.1.3' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.1.4' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.2' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.2.0' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.2.1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.2.2' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.2.3' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv2_core.2.4' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv1_core' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv1_core.0' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv1_core.1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv1_core.2' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv1_core.3' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv1_core.4' in dimension 2 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.0.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.0.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.0.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.0.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.0.4' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.1.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.1.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.1.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.1.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.1.4' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.2.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.2.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.2.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.2.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.2.4' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.3.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.3.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.3.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.3.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.3.4' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.4.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.4.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.4.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.4.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_core.4.4' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv1_bias' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.0.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.0.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.0.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.0.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.0.4' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.1.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.1.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.1.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.1.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.1.4' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.2.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.2.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.2.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.2.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.2.4' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.3.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.3.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.3.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.3.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.3.4' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.4.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.4.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.4.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.4.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_core.4.4' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv1_bias' in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'FC1_layer' into 'run' (minst/source/test.cpp:306) automatically.
+Command         transform done; 1.165 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.o.1.tmp.bc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'Conv2_layer' (minst/source/test.cpp:166:57)...76 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'Conv1_layer' (minst/source/test.cpp:108:57)...26 expression(s) balanced.
+Command         transform done; 0.235 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 146.578 ; gain = 61.270
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.o.2.bc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'Conv2_layer_label9' (minst/source/test.cpp:168:4) in function 'Conv2_layer'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (minst/source/test.cpp:166:23) in function 'Conv2_layer'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Conv1_layer_label7' (minst/source/test.cpp:110:4) in function 'Conv1_layer'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Conv1_layer_label8' (minst/source/test.cpp:109:3) in function 'Conv1_layer' : 
+
+the outer loop is not a perfect loop.
+Command         transform done; 0.648 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 214.570 ; gain = 129.262
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 2.523 sec.
+Command     elaborate done; 7.472 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'run' ...
+Execute       ap_set_top_model run 
+Execute       get_model_list run -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model run 
+Execute       preproc_iomode -model FC2_layer 
+Execute       preproc_iomode -model Flatten_layer 
+Execute       preproc_iomode -model MaxPooling2_layer 
+Execute       preproc_iomode -model Conv2_layer 
+Execute       preproc_iomode -model MaxPooling1_layer 
+Execute       preproc_iomode -model Conv1_layer 
+Execute       preproc_iomode -model Init 
+Execute       get_model_list run -filter all-wo-channel 
+INFO-FLOW: Model list for configure: Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run
+INFO-FLOW: Configuring Module : Init ...
+Execute       set_default_model Init 
+Execute       apply_spec_resource_limit Init 
+INFO-FLOW: Configuring Module : Conv1_layer ...
+Execute       set_default_model Conv1_layer 
+Execute       apply_spec_resource_limit Conv1_layer 
+INFO-FLOW: Configuring Module : MaxPooling1_layer ...
+Execute       set_default_model MaxPooling1_layer 
+Execute       apply_spec_resource_limit MaxPooling1_layer 
+INFO-FLOW: Configuring Module : Conv2_layer ...
+Execute       set_default_model Conv2_layer 
+Execute       apply_spec_resource_limit Conv2_layer 
+INFO-FLOW: Configuring Module : MaxPooling2_layer ...
+Execute       set_default_model MaxPooling2_layer 
+Execute       apply_spec_resource_limit MaxPooling2_layer 
+INFO-FLOW: Configuring Module : Flatten_layer ...
+Execute       set_default_model Flatten_layer 
+Execute       apply_spec_resource_limit Flatten_layer 
+INFO-FLOW: Configuring Module : FC2_layer ...
+Execute       set_default_model FC2_layer 
+Execute       apply_spec_resource_limit FC2_layer 
+INFO-FLOW: Configuring Module : run ...
+Execute       set_default_model run 
+Execute       apply_spec_resource_limit run 
+INFO-FLOW: Model list for preprocess: Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run
+INFO-FLOW: Preprocessing Module: Init ...
+Execute       set_default_model Init 
+Execute       cdfg_preprocess -model Init 
+Execute       rtl_gen_preprocess Init 
+INFO-FLOW: Preprocessing Module: Conv1_layer ...
+Execute       set_default_model Conv1_layer 
+Execute       cdfg_preprocess -model Conv1_layer 
+Execute       rtl_gen_preprocess Conv1_layer 
+INFO-FLOW: Preprocessing Module: MaxPooling1_layer ...
+Execute       set_default_model MaxPooling1_layer 
+Execute       cdfg_preprocess -model MaxPooling1_layer 
+Execute       rtl_gen_preprocess MaxPooling1_layer 
+INFO-FLOW: Preprocessing Module: Conv2_layer ...
+Execute       set_default_model Conv2_layer 
+Execute       cdfg_preprocess -model Conv2_layer 
+Execute       rtl_gen_preprocess Conv2_layer 
+INFO-FLOW: Preprocessing Module: MaxPooling2_layer ...
+Execute       set_default_model MaxPooling2_layer 
+Execute       cdfg_preprocess -model MaxPooling2_layer 
+Execute       rtl_gen_preprocess MaxPooling2_layer 
+INFO-FLOW: Preprocessing Module: Flatten_layer ...
+Execute       set_default_model Flatten_layer 
+Execute       cdfg_preprocess -model Flatten_layer 
+Execute       rtl_gen_preprocess Flatten_layer 
+INFO-FLOW: Preprocessing Module: FC2_layer ...
+Execute       set_default_model FC2_layer 
+Execute       cdfg_preprocess -model FC2_layer 
+Execute       rtl_gen_preprocess FC2_layer 
+INFO-FLOW: Preprocessing Module: run ...
+Execute       set_default_model run 
+Execute       cdfg_preprocess -model run 
+Execute       rtl_gen_preprocess run 
+INFO-FLOW: Model list for synthesis: Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Init' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Init 
+Execute       schedule -model Init 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.285 seconds; current allocated memory: 170.765 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 17 loops have been pipelined in this design.
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.sched.adb -f 
+INFO-FLOW: Finish scheduling Init.
+Execute       set_default_model Init 
+Execute       bind -model Init 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Init
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 171.360 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.verbose.bind.rpt -verbose -f 
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.bind.adb -f 
+INFO-FLOW: Finish binding Init.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv1_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Conv1_layer 
+Execute       schedule -model Conv1_layer 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Conv1_layer_label7_Conv1_layer_label0'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('conv1_input_load_3', minst/source/test.cpp:114) on array 'conv1_input' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'conv1_input'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 13, Depth = 42.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.285 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.389 seconds; current allocated memory: 172.293 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.verbose.sched.rpt -verbose -f 
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.sched.adb -f 
+INFO-FLOW: Finish scheduling Conv1_layer.
+Execute       set_default_model Conv1_layer 
+Execute       bind -model Conv1_layer 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Conv1_layer
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 173.344 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.verbose.bind.rpt -verbose -f 
+Command       report done; 0.156 sec.
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.bind.adb -f 
+INFO-FLOW: Finish binding Conv1_layer.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MaxPooling1_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model MaxPooling1_layer 
+Execute       schedule -model MaxPooling1_layer 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.254 seconds; current allocated memory: 173.662 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.verbose.sched.rpt -verbose -f 
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.sched.adb -f 
+INFO-FLOW: Finish scheduling MaxPooling1_layer.
+Execute       set_default_model MaxPooling1_layer 
+Execute       bind -model MaxPooling1_layer 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=MaxPooling1_layer
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.082 seconds; current allocated memory: 173.913 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.verbose.bind.rpt -verbose -f 
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.bind.adb -f 
+INFO-FLOW: Finish binding MaxPooling1_layer.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv2_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Conv2_layer 
+Execute       schedule -model Conv2_layer 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L_Conv2_layer_label9_Conv2_layer_label12'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('pool1_output_load_10', minst/source/test.cpp:173) on array 'pool1_output' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'pool1_output'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 38, Depth = 97.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.589 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.66 seconds; current allocated memory: 175.833 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.verbose.sched.rpt -verbose -f 
+Command       report done; 0.267 sec.
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.sched.adb -f 
+INFO-FLOW: Finish scheduling Conv2_layer.
+Execute       set_default_model Conv2_layer 
+Execute       bind -model Conv2_layer 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Conv2_layer
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.12 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.482 seconds; current allocated memory: 178.500 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.verbose.bind.rpt -verbose -f 
+Command       report done; 0.344 sec.
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.bind.adb -f 
+Command       db_write done; 0.105 sec.
+INFO-FLOW: Finish binding Conv2_layer.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MaxPooling2_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model MaxPooling2_layer 
+Execute       schedule -model MaxPooling2_layer 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.511 seconds; current allocated memory: 178.831 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.verbose.sched.rpt -verbose -f 
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.sched.adb -f 
+INFO-FLOW: Finish scheduling MaxPooling2_layer.
+Execute       set_default_model MaxPooling2_layer 
+Execute       bind -model MaxPooling2_layer 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=MaxPooling2_layer
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.073 seconds; current allocated memory: 179.034 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.verbose.bind.rpt -verbose -f 
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.bind.adb -f 
+INFO-FLOW: Finish binding MaxPooling2_layer.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Flatten_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Flatten_layer 
+Execute       schedule -model Flatten_layer 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Flatten_layer_label4'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('pool2_output_load_2', minst/source/test.cpp:226) on array 'pool2_output' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'pool2_output'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 8, Depth = 9.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.102 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 179.368 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.verbose.sched.rpt -verbose -f 
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.sched.adb -f 
+INFO-FLOW: Finish scheduling Flatten_layer.
+Execute       set_default_model Flatten_layer 
+Execute       bind -model Flatten_layer 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Flatten_layer
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.119 seconds; current allocated memory: 179.790 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.verbose.bind.rpt -verbose -f 
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.bind.adb -f 
+INFO-FLOW: Finish binding Flatten_layer.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC2_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model FC2_layer 
+Execute       schedule -model FC2_layer 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.124 seconds; current allocated memory: 179.985 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.verbose.sched.rpt -verbose -f 
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.sched.adb -f 
+INFO-FLOW: Finish scheduling FC2_layer.
+Execute       set_default_model FC2_layer 
+Execute       bind -model FC2_layer 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=FC2_layer
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.092 seconds; current allocated memory: 180.197 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.verbose.bind.rpt -verbose -f 
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.bind.adb -f 
+INFO-FLOW: Finish binding FC2_layer.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model run 
+Execute       schedule -model run 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.113 seconds; current allocated memory: 180.421 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.verbose.sched.rpt -verbose -f 
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.sched.adb -f 
+INFO-FLOW: Finish scheduling run.
+Execute       set_default_model run 
+Execute       bind -model run 
+BIND OPTION: effort=medium
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=run
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.476 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.518 seconds; current allocated memory: 181.321 MB.
+Execute       report -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.verbose.bind.rpt -verbose -f 
+Command       report done; 0.274 sec.
+Execute       db_write -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.bind.adb -f 
+INFO-FLOW: Finish binding run.
+Execute       get_model_list run -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess Init 
+Execute       rtl_gen_preprocess Conv1_layer 
+Execute       rtl_gen_preprocess MaxPooling1_layer 
+Execute       rtl_gen_preprocess Conv2_layer 
+Execute       rtl_gen_preprocess MaxPooling2_layer 
+Execute       rtl_gen_preprocess Flatten_layer 
+Execute       rtl_gen_preprocess FC2_layer 
+Execute       rtl_gen_preprocess run 
+INFO-FLOW: Model list for RTL generation: Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Init' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Init -vendor xilinx -mg_file E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Init'.
+INFO: [HLS 200-111]  Elapsed time: 0.349 seconds; current allocated memory: 182.530 MB.
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Init -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/systemc/Init -synmodules Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run 
+Execute       gen_rtl Init -style xilinx -f -lang vhdl -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/vhdl/Init 
+Execute       gen_rtl Init -style xilinx -f -lang vlog -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/verilog/Init 
+Execute       gen_tb_info Init -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init -p E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db 
+Execute       report -model Init -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/Init_csynth.rpt -f 
+Execute       report -model Init -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/Init_csynth.xml -f -x 
+Execute       report -model Init -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.verbose.rpt -verbose -f 
+Execute       db_write -model Init -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv1_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Conv1_layer -vendor xilinx -mg_file E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'run_fadd_32ns_32ns_32_4_full_dsp_1' to 'run_fadd_32ns_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'run_fmul_32ns_32ns_32_1_max_dsp_1' to 'run_fmul_32ns_32ncud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'run_fadd_32ns_32nbkb': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'run_fmul_32ns_32ncud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'run_mux_32_32_1_1': 26 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv1_layer'.
+INFO: [HLS 200-111]  Elapsed time: 0.354 seconds; current allocated memory: 184.787 MB.
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Conv1_layer -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/systemc/Conv1_layer -synmodules Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run 
+Execute       gen_rtl Conv1_layer -style xilinx -f -lang vhdl -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/vhdl/Conv1_layer 
+Execute       gen_rtl Conv1_layer -style xilinx -f -lang vlog -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/verilog/Conv1_layer 
+Execute       gen_tb_info Conv1_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer -p E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db 
+Execute       report -model Conv1_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/Conv1_layer_csynth.rpt -f 
+Execute       report -model Conv1_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/Conv1_layer_csynth.xml -f -x 
+Execute       report -model Conv1_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.verbose.rpt -verbose -f 
+Command       report done; 0.176 sec.
+Execute       db_write -model Conv1_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MaxPooling1_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model MaxPooling1_layer -vendor xilinx -mg_file E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'run_fcmp_32ns_32ns_1_1_1' to 'run_fcmp_32ns_32ndEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'run_fcmp_32ns_32ndEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MaxPooling1_layer'.
+INFO: [HLS 200-111]  Elapsed time: 0.531 seconds; current allocated memory: 185.569 MB.
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute       gen_rtl MaxPooling1_layer -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/systemc/MaxPooling1_layer -synmodules Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run 
+Execute       gen_rtl MaxPooling1_layer -style xilinx -f -lang vhdl -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/vhdl/MaxPooling1_layer 
+Execute       gen_rtl MaxPooling1_layer -style xilinx -f -lang vlog -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/verilog/MaxPooling1_layer 
+Execute       gen_tb_info MaxPooling1_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer -p E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db 
+Execute       report -model MaxPooling1_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/MaxPooling1_layer_csynth.rpt -f 
+Execute       report -model MaxPooling1_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/MaxPooling1_layer_csynth.xml -f -x 
+Execute       report -model MaxPooling1_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.verbose.rpt -verbose -f 
+Execute       db_write -model MaxPooling1_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv2_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Conv2_layer -vendor xilinx -mg_file E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_bias' to 'Conv2_layer_conv2eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_0_0' to 'Conv2_layer_conv2fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_0_0' to 'Conv2_layer_conv2g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_0_0' to 'Conv2_layer_conv2hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_0_1' to 'Conv2_layer_conv2ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_0_1' to 'Conv2_layer_conv2jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_0_1' to 'Conv2_layer_conv2kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_0_2' to 'Conv2_layer_conv2lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_0_2' to 'Conv2_layer_conv2mb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_0_2' to 'Conv2_layer_conv2ncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_0_3' to 'Conv2_layer_conv2ocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_0_3' to 'Conv2_layer_conv2pcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_0_3' to 'Conv2_layer_conv2qcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_0_4' to 'Conv2_layer_conv2rcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_0_4' to 'Conv2_layer_conv2sc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_0_4' to 'Conv2_layer_conv2tde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_1_0' to 'Conv2_layer_conv2udo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_1_0' to 'Conv2_layer_conv2vdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_1_0' to 'Conv2_layer_conv2wdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_1_1' to 'Conv2_layer_conv2xdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_1_1' to 'Conv2_layer_conv2yd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_1_1' to 'Conv2_layer_conv2zec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_1_2' to 'Conv2_layer_conv2Aem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_1_2' to 'Conv2_layer_conv2Bew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_1_2' to 'Conv2_layer_conv2CeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_1_3' to 'Conv2_layer_conv2DeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_1_3' to 'Conv2_layer_conv2Ee0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_1_3' to 'Conv2_layer_conv2Ffa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_1_4' to 'Conv2_layer_conv2Gfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_1_4' to 'Conv2_layer_conv2Hfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_1_4' to 'Conv2_layer_conv2IfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_2_0' to 'Conv2_layer_conv2JfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_2_0' to 'Conv2_layer_conv2KfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_2_0' to 'Conv2_layer_conv2Lf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_2_1' to 'Conv2_layer_conv2Mgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_2_1' to 'Conv2_layer_conv2Ngs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_2_1' to 'Conv2_layer_conv2OgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_2_2' to 'Conv2_layer_conv2PgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_2_2' to 'Conv2_layer_conv2QgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_2_2' to 'Conv2_layer_conv2Rg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_2_3' to 'Conv2_layer_conv2Shg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_2_3' to 'Conv2_layer_conv2Thq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_2_3' to 'Conv2_layer_conv2UhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_2_4' to 'Conv2_layer_conv2VhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_2_4' to 'Conv2_layer_conv2WhU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_2_4' to 'Conv2_layer_conv2Xh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_3_0' to 'Conv2_layer_conv2Yie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_3_0' to 'Conv2_layer_conv2Zio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_3_0' to 'Conv2_layer_conv20iy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_3_1' to 'Conv2_layer_conv21iI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_3_1' to 'Conv2_layer_conv22iS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_3_1' to 'Conv2_layer_conv23i2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_3_2' to 'Conv2_layer_conv24jc' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_3_2' to 'Conv2_layer_conv25jm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_3_2' to 'Conv2_layer_conv26jw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_3_3' to 'Conv2_layer_conv27jG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_3_3' to 'Conv2_layer_conv28jQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_3_3' to 'Conv2_layer_conv29j0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_3_4' to 'Conv2_layer_conv2bak' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_3_4' to 'Conv2_layer_conv2bbk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_3_4' to 'Conv2_layer_conv2bck' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_4_0' to 'Conv2_layer_conv2bdk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_4_0' to 'Conv2_layer_conv2bek' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_4_0' to 'Conv2_layer_conv2bfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_4_1' to 'Conv2_layer_conv2bgk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_4_1' to 'Conv2_layer_conv2bhl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_4_1' to 'Conv2_layer_conv2bil' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_4_2' to 'Conv2_layer_conv2bjl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_4_2' to 'Conv2_layer_conv2bkl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_4_2' to 'Conv2_layer_conv2bll' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_4_3' to 'Conv2_layer_conv2bml' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_4_3' to 'Conv2_layer_conv2bnm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_4_3' to 'Conv2_layer_conv2bom' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_0_4_4' to 'Conv2_layer_conv2bpm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_1_4_4' to 'Conv2_layer_conv2bqm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv2_layer_conv2_core_2_4_4' to 'Conv2_layer_conv2brm' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'run_fadd_32ns_32nbkb': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'run_fmul_32ns_32ncud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv2_layer'.
+Command       create_rtl_model done; 1.117 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.293 seconds; current allocated memory: 190.826 MB.
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Conv2_layer -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/systemc/Conv2_layer -synmodules Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run 
+Execute       gen_rtl Conv2_layer -style xilinx -f -lang vhdl -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/vhdl/Conv2_layer 
+Execute       gen_rtl Conv2_layer -style xilinx -f -lang vlog -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/verilog/Conv2_layer 
+Execute       gen_tb_info Conv2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer -p E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db 
+Execute       report -model Conv2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/Conv2_layer_csynth.rpt -f 
+Execute       report -model Conv2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/Conv2_layer_csynth.xml -f -x 
+Execute       report -model Conv2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.verbose.rpt -verbose -f 
+Command       report done; 0.389 sec.
+Execute       db_write -model Conv2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.adb -f 
+Command       db_write done; 0.199 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MaxPooling2_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model MaxPooling2_layer -vendor xilinx -mg_file E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'run_fcmp_32ns_32ndEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MaxPooling2_layer'.
+INFO: [HLS 200-111]  Elapsed time: 1.068 seconds; current allocated memory: 192.023 MB.
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute       gen_rtl MaxPooling2_layer -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/systemc/MaxPooling2_layer -synmodules Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run 
+Execute       gen_rtl MaxPooling2_layer -style xilinx -f -lang vhdl -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/vhdl/MaxPooling2_layer 
+Execute       gen_rtl MaxPooling2_layer -style xilinx -f -lang vlog -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/verilog/MaxPooling2_layer 
+Execute       gen_tb_info MaxPooling2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer -p E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db 
+Execute       report -model MaxPooling2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/MaxPooling2_layer_csynth.rpt -f 
+Execute       report -model MaxPooling2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/MaxPooling2_layer_csynth.xml -f -x 
+Execute       report -model MaxPooling2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.verbose.rpt -verbose -f 
+Execute       db_write -model MaxPooling2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Flatten_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Flatten_layer -vendor xilinx -mg_file E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Flatten_layer'.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 193.027 MB.
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Flatten_layer -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/systemc/Flatten_layer -synmodules Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run 
+Execute       gen_rtl Flatten_layer -style xilinx -f -lang vhdl -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/vhdl/Flatten_layer 
+Execute       gen_rtl Flatten_layer -style xilinx -f -lang vlog -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/verilog/Flatten_layer 
+Execute       gen_tb_info Flatten_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer -p E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db 
+Execute       report -model Flatten_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/Flatten_layer_csynth.rpt -f 
+Execute       report -model Flatten_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/Flatten_layer_csynth.xml -f -x 
+Execute       report -model Flatten_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.verbose.rpt -verbose -f 
+Execute       db_write -model Flatten_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC2_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model FC2_layer -vendor xilinx -mg_file E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'run_fadd_32ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'run_fcmp_32ns_32ndEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'run_fmul_32ns_32ncud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC2_layer'.
+INFO: [HLS 200-111]  Elapsed time: 0.322 seconds; current allocated memory: 193.605 MB.
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute       gen_rtl FC2_layer -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/systemc/FC2_layer -synmodules Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run 
+Execute       gen_rtl FC2_layer -style xilinx -f -lang vhdl -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/vhdl/FC2_layer 
+Execute       gen_rtl FC2_layer -style xilinx -f -lang vlog -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/verilog/FC2_layer 
+Execute       gen_tb_info FC2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer -p E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db 
+Execute       report -model FC2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/FC2_layer_csynth.rpt -f 
+Execute       report -model FC2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/FC2_layer_csynth.xml -f -x 
+Execute       report -model FC2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.verbose.rpt -verbose -f 
+Execute       db_write -model FC2_layer -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model run -vendor xilinx -mg_file E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'run/data_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'run/predict' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'run' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'row' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'column' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'run_fadd_32ns_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'run_fcmp_32ns_32ndEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'run_fmul_32ns_32ncud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run'.
+Command       create_rtl_model done; 0.297 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.51 seconds; current allocated memory: 195.571 MB.
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute       gen_rtl run -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/systemc/run -synmodules Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run 
+Execute       gen_rtl run -istop -style xilinx -f -lang vhdl -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/vhdl/run 
+Execute       gen_rtl run -istop -style xilinx -f -lang vlog -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/verilog/run 
+Execute       export_constraint_db -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.constraint.tcl -f -tool general 
+Execute       report -model run -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.design.xml -verbose -f -dv 
+Command       report done; 0.216 sec.
+Execute       report -model run -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info run -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run -p E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db 
+Execute       report -model run -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/run_csynth.rpt -f 
+Execute       report -model run -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/syn/report/run_csynth.xml -f -x 
+Execute       report -model run -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.verbose.rpt -verbose -f 
+Command       report done; 0.288 sec.
+Execute       db_write -model run -o E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.adb -f 
+Execute       sc_get_clocks run 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain run 
+INFO-FLOW: Model list for RTL component generation: Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run
+INFO-FLOW: Handling components in module [Init] ... 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.compgen.tcl 
+INFO-FLOW: Handling components in module [Conv1_layer] ... 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.compgen.tcl 
+INFO-FLOW: Found component run_fadd_32ns_32nbkb.
+INFO-FLOW: Append model run_fadd_32ns_32nbkb
+INFO-FLOW: Found component run_fmul_32ns_32ncud.
+INFO-FLOW: Append model run_fmul_32ns_32ncud
+INFO-FLOW: Found component run_mux_32_32_1_1.
+INFO-FLOW: Append model run_mux_32_32_1_1
+INFO-FLOW: Handling components in module [MaxPooling1_layer] ... 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.compgen.tcl 
+INFO-FLOW: Found component run_fcmp_32ns_32ndEe.
+INFO-FLOW: Append model run_fcmp_32ns_32ndEe
+INFO-FLOW: Handling components in module [Conv2_layer] ... 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.compgen.tcl 
+INFO-FLOW: Found component Conv2_layer_conv2eOg.
+INFO-FLOW: Append model Conv2_layer_conv2eOg
+INFO-FLOW: Found component Conv2_layer_conv2fYi.
+INFO-FLOW: Append model Conv2_layer_conv2fYi
+INFO-FLOW: Found component Conv2_layer_conv2g8j.
+INFO-FLOW: Append model Conv2_layer_conv2g8j
+INFO-FLOW: Found component Conv2_layer_conv2hbi.
+INFO-FLOW: Append model Conv2_layer_conv2hbi
+INFO-FLOW: Found component Conv2_layer_conv2ibs.
+INFO-FLOW: Append model Conv2_layer_conv2ibs
+INFO-FLOW: Found component Conv2_layer_conv2jbC.
+INFO-FLOW: Append model Conv2_layer_conv2jbC
+INFO-FLOW: Found component Conv2_layer_conv2kbM.
+INFO-FLOW: Append model Conv2_layer_conv2kbM
+INFO-FLOW: Found component Conv2_layer_conv2lbW.
+INFO-FLOW: Append model Conv2_layer_conv2lbW
+INFO-FLOW: Found component Conv2_layer_conv2mb6.
+INFO-FLOW: Append model Conv2_layer_conv2mb6
+INFO-FLOW: Found component Conv2_layer_conv2ncg.
+INFO-FLOW: Append model Conv2_layer_conv2ncg
+INFO-FLOW: Found component Conv2_layer_conv2ocq.
+INFO-FLOW: Append model Conv2_layer_conv2ocq
+INFO-FLOW: Found component Conv2_layer_conv2pcA.
+INFO-FLOW: Append model Conv2_layer_conv2pcA
+INFO-FLOW: Found component Conv2_layer_conv2qcK.
+INFO-FLOW: Append model Conv2_layer_conv2qcK
+INFO-FLOW: Found component Conv2_layer_conv2rcU.
+INFO-FLOW: Append model Conv2_layer_conv2rcU
+INFO-FLOW: Found component Conv2_layer_conv2sc4.
+INFO-FLOW: Append model Conv2_layer_conv2sc4
+INFO-FLOW: Found component Conv2_layer_conv2tde.
+INFO-FLOW: Append model Conv2_layer_conv2tde
+INFO-FLOW: Found component Conv2_layer_conv2udo.
+INFO-FLOW: Append model Conv2_layer_conv2udo
+INFO-FLOW: Found component Conv2_layer_conv2vdy.
+INFO-FLOW: Append model Conv2_layer_conv2vdy
+INFO-FLOW: Found component Conv2_layer_conv2wdI.
+INFO-FLOW: Append model Conv2_layer_conv2wdI
+INFO-FLOW: Found component Conv2_layer_conv2xdS.
+INFO-FLOW: Append model Conv2_layer_conv2xdS
+INFO-FLOW: Found component Conv2_layer_conv2yd2.
+INFO-FLOW: Append model Conv2_layer_conv2yd2
+INFO-FLOW: Found component Conv2_layer_conv2zec.
+INFO-FLOW: Append model Conv2_layer_conv2zec
+INFO-FLOW: Found component Conv2_layer_conv2Aem.
+INFO-FLOW: Append model Conv2_layer_conv2Aem
+INFO-FLOW: Found component Conv2_layer_conv2Bew.
+INFO-FLOW: Append model Conv2_layer_conv2Bew
+INFO-FLOW: Found component Conv2_layer_conv2CeG.
+INFO-FLOW: Append model Conv2_layer_conv2CeG
+INFO-FLOW: Found component Conv2_layer_conv2DeQ.
+INFO-FLOW: Append model Conv2_layer_conv2DeQ
+INFO-FLOW: Found component Conv2_layer_conv2Ee0.
+INFO-FLOW: Append model Conv2_layer_conv2Ee0
+INFO-FLOW: Found component Conv2_layer_conv2Ffa.
+INFO-FLOW: Append model Conv2_layer_conv2Ffa
+INFO-FLOW: Found component Conv2_layer_conv2Gfk.
+INFO-FLOW: Append model Conv2_layer_conv2Gfk
+INFO-FLOW: Found component Conv2_layer_conv2Hfu.
+INFO-FLOW: Append model Conv2_layer_conv2Hfu
+INFO-FLOW: Found component Conv2_layer_conv2IfE.
+INFO-FLOW: Append model Conv2_layer_conv2IfE
+INFO-FLOW: Found component Conv2_layer_conv2JfO.
+INFO-FLOW: Append model Conv2_layer_conv2JfO
+INFO-FLOW: Found component Conv2_layer_conv2KfY.
+INFO-FLOW: Append model Conv2_layer_conv2KfY
+INFO-FLOW: Found component Conv2_layer_conv2Lf8.
+INFO-FLOW: Append model Conv2_layer_conv2Lf8
+INFO-FLOW: Found component Conv2_layer_conv2Mgi.
+INFO-FLOW: Append model Conv2_layer_conv2Mgi
+INFO-FLOW: Found component Conv2_layer_conv2Ngs.
+INFO-FLOW: Append model Conv2_layer_conv2Ngs
+INFO-FLOW: Found component Conv2_layer_conv2OgC.
+INFO-FLOW: Append model Conv2_layer_conv2OgC
+INFO-FLOW: Found component Conv2_layer_conv2PgM.
+INFO-FLOW: Append model Conv2_layer_conv2PgM
+INFO-FLOW: Found component Conv2_layer_conv2QgW.
+INFO-FLOW: Append model Conv2_layer_conv2QgW
+INFO-FLOW: Found component Conv2_layer_conv2Rg6.
+INFO-FLOW: Append model Conv2_layer_conv2Rg6
+INFO-FLOW: Found component Conv2_layer_conv2Shg.
+INFO-FLOW: Append model Conv2_layer_conv2Shg
+INFO-FLOW: Found component Conv2_layer_conv2Thq.
+INFO-FLOW: Append model Conv2_layer_conv2Thq
+INFO-FLOW: Found component Conv2_layer_conv2UhA.
+INFO-FLOW: Append model Conv2_layer_conv2UhA
+INFO-FLOW: Found component Conv2_layer_conv2VhK.
+INFO-FLOW: Append model Conv2_layer_conv2VhK
+INFO-FLOW: Found component Conv2_layer_conv2WhU.
+INFO-FLOW: Append model Conv2_layer_conv2WhU
+INFO-FLOW: Found component Conv2_layer_conv2Xh4.
+INFO-FLOW: Append model Conv2_layer_conv2Xh4
+INFO-FLOW: Found component Conv2_layer_conv2Yie.
+INFO-FLOW: Append model Conv2_layer_conv2Yie
+INFO-FLOW: Found component Conv2_layer_conv2Zio.
+INFO-FLOW: Append model Conv2_layer_conv2Zio
+INFO-FLOW: Found component Conv2_layer_conv20iy.
+INFO-FLOW: Append model Conv2_layer_conv20iy
+INFO-FLOW: Found component Conv2_layer_conv21iI.
+INFO-FLOW: Append model Conv2_layer_conv21iI
+INFO-FLOW: Found component Conv2_layer_conv22iS.
+INFO-FLOW: Append model Conv2_layer_conv22iS
+INFO-FLOW: Found component Conv2_layer_conv23i2.
+INFO-FLOW: Append model Conv2_layer_conv23i2
+INFO-FLOW: Found component Conv2_layer_conv24jc.
+INFO-FLOW: Append model Conv2_layer_conv24jc
+INFO-FLOW: Found component Conv2_layer_conv25jm.
+INFO-FLOW: Append model Conv2_layer_conv25jm
+INFO-FLOW: Found component Conv2_layer_conv26jw.
+INFO-FLOW: Append model Conv2_layer_conv26jw
+INFO-FLOW: Found component Conv2_layer_conv27jG.
+INFO-FLOW: Append model Conv2_layer_conv27jG
+INFO-FLOW: Found component Conv2_layer_conv28jQ.
+INFO-FLOW: Append model Conv2_layer_conv28jQ
+INFO-FLOW: Found component Conv2_layer_conv29j0.
+INFO-FLOW: Append model Conv2_layer_conv29j0
+INFO-FLOW: Found component Conv2_layer_conv2bak.
+INFO-FLOW: Append model Conv2_layer_conv2bak
+INFO-FLOW: Found component Conv2_layer_conv2bbk.
+INFO-FLOW: Append model Conv2_layer_conv2bbk
+INFO-FLOW: Found component Conv2_layer_conv2bck.
+INFO-FLOW: Append model Conv2_layer_conv2bck
+INFO-FLOW: Found component Conv2_layer_conv2bdk.
+INFO-FLOW: Append model Conv2_layer_conv2bdk
+INFO-FLOW: Found component Conv2_layer_conv2bek.
+INFO-FLOW: Append model Conv2_layer_conv2bek
+INFO-FLOW: Found component Conv2_layer_conv2bfk.
+INFO-FLOW: Append model Conv2_layer_conv2bfk
+INFO-FLOW: Found component Conv2_layer_conv2bgk.
+INFO-FLOW: Append model Conv2_layer_conv2bgk
+INFO-FLOW: Found component Conv2_layer_conv2bhl.
+INFO-FLOW: Append model Conv2_layer_conv2bhl
+INFO-FLOW: Found component Conv2_layer_conv2bil.
+INFO-FLOW: Append model Conv2_layer_conv2bil
+INFO-FLOW: Found component Conv2_layer_conv2bjl.
+INFO-FLOW: Append model Conv2_layer_conv2bjl
+INFO-FLOW: Found component Conv2_layer_conv2bkl.
+INFO-FLOW: Append model Conv2_layer_conv2bkl
+INFO-FLOW: Found component Conv2_layer_conv2bll.
+INFO-FLOW: Append model Conv2_layer_conv2bll
+INFO-FLOW: Found component Conv2_layer_conv2bml.
+INFO-FLOW: Append model Conv2_layer_conv2bml
+INFO-FLOW: Found component Conv2_layer_conv2bnm.
+INFO-FLOW: Append model Conv2_layer_conv2bnm
+INFO-FLOW: Found component Conv2_layer_conv2bom.
+INFO-FLOW: Append model Conv2_layer_conv2bom
+INFO-FLOW: Found component Conv2_layer_conv2bpm.
+INFO-FLOW: Append model Conv2_layer_conv2bpm
+INFO-FLOW: Found component Conv2_layer_conv2bqm.
+INFO-FLOW: Append model Conv2_layer_conv2bqm
+INFO-FLOW: Found component Conv2_layer_conv2brm.
+INFO-FLOW: Append model Conv2_layer_conv2brm
+INFO-FLOW: Handling components in module [MaxPooling2_layer] ... 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.compgen.tcl 
+INFO-FLOW: Handling components in module [Flatten_layer] ... 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.compgen.tcl 
+INFO-FLOW: Handling components in module [FC2_layer] ... 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.compgen.tcl 
+INFO-FLOW: Found component FC2_layer_fc2_wei.
+INFO-FLOW: Append model FC2_layer_fc2_wei
+INFO-FLOW: Found component FC2_layer_fc2_bias.
+INFO-FLOW: Append model FC2_layer_fc2_bias
+INFO-FLOW: Handling components in module [run] ... 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.compgen.tcl 
+INFO-FLOW: Found component run_data.
+INFO-FLOW: Append model run_data
+INFO-FLOW: Found component run_conv1_input.
+INFO-FLOW: Append model run_conv1_input
+INFO-FLOW: Found component run_conv1_output.
+INFO-FLOW: Append model run_conv1_output
+INFO-FLOW: Found component run_pool1_output.
+INFO-FLOW: Append model run_pool1_output
+INFO-FLOW: Found component run_conv2_output.
+INFO-FLOW: Append model run_conv2_output
+INFO-FLOW: Found component run_pool2_output.
+INFO-FLOW: Append model run_pool2_output
+INFO-FLOW: Found component run_flatten_output.
+INFO-FLOW: Append model run_flatten_output
+INFO-FLOW: Found component run_fc1_output.
+INFO-FLOW: Append model run_fc1_output
+INFO-FLOW: Found component run_fc2_output.
+INFO-FLOW: Append model run_fc2_output
+INFO-FLOW: Found component run_fc1_wei.
+INFO-FLOW: Append model run_fc1_wei
+INFO-FLOW: Found component run_fc1_bias.
+INFO-FLOW: Append model run_fc1_bias
+INFO-FLOW: Append model Init
+INFO-FLOW: Append model Conv1_layer
+INFO-FLOW: Append model MaxPooling1_layer
+INFO-FLOW: Append model Conv2_layer
+INFO-FLOW: Append model MaxPooling2_layer
+INFO-FLOW: Append model Flatten_layer
+INFO-FLOW: Append model FC2_layer
+INFO-FLOW: Append model run
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: run_fadd_32ns_32nbkb run_fmul_32ns_32ncud run_mux_32_32_1_1 run_fcmp_32ns_32ndEe Conv2_layer_conv2eOg Conv2_layer_conv2fYi Conv2_layer_conv2g8j Conv2_layer_conv2hbi Conv2_layer_conv2ibs Conv2_layer_conv2jbC Conv2_layer_conv2kbM Conv2_layer_conv2lbW Conv2_layer_conv2mb6 Conv2_layer_conv2ncg Conv2_layer_conv2ocq Conv2_layer_conv2pcA Conv2_layer_conv2qcK Conv2_layer_conv2rcU Conv2_layer_conv2sc4 Conv2_layer_conv2tde Conv2_layer_conv2udo Conv2_layer_conv2vdy Conv2_layer_conv2wdI Conv2_layer_conv2xdS Conv2_layer_conv2yd2 Conv2_layer_conv2zec Conv2_layer_conv2Aem Conv2_layer_conv2Bew Conv2_layer_conv2CeG Conv2_layer_conv2DeQ Conv2_layer_conv2Ee0 Conv2_layer_conv2Ffa Conv2_layer_conv2Gfk Conv2_layer_conv2Hfu Conv2_layer_conv2IfE Conv2_layer_conv2JfO Conv2_layer_conv2KfY Conv2_layer_conv2Lf8 Conv2_layer_conv2Mgi Conv2_layer_conv2Ngs Conv2_layer_conv2OgC Conv2_layer_conv2PgM Conv2_layer_conv2QgW Conv2_layer_conv2Rg6 Conv2_layer_conv2Shg Conv2_layer_conv2Thq Conv2_layer_conv2UhA Conv2_layer_conv2VhK Conv2_layer_conv2WhU Conv2_layer_conv2Xh4 Conv2_layer_conv2Yie Conv2_layer_conv2Zio Conv2_layer_conv20iy Conv2_layer_conv21iI Conv2_layer_conv22iS Conv2_layer_conv23i2 Conv2_layer_conv24jc Conv2_layer_conv25jm Conv2_layer_conv26jw Conv2_layer_conv27jG Conv2_layer_conv28jQ Conv2_layer_conv29j0 Conv2_layer_conv2bak Conv2_layer_conv2bbk Conv2_layer_conv2bck Conv2_layer_conv2bdk Conv2_layer_conv2bek Conv2_layer_conv2bfk Conv2_layer_conv2bgk Conv2_layer_conv2bhl Conv2_layer_conv2bil Conv2_layer_conv2bjl Conv2_layer_conv2bkl Conv2_layer_conv2bll Conv2_layer_conv2bml Conv2_layer_conv2bnm Conv2_layer_conv2bom Conv2_layer_conv2bpm Conv2_layer_conv2bqm Conv2_layer_conv2brm FC2_layer_fc2_wei FC2_layer_fc2_bias run_data run_conv1_input run_conv1_output run_pool1_output run_conv2_output run_pool2_output run_flatten_output run_fc1_output run_fc2_output run_fc1_wei run_fc1_bias Init Conv1_layer MaxPooling1_layer Conv2_layer MaxPooling2_layer Flatten_layer FC2_layer run
+INFO-FLOW: To file: write model run_fadd_32ns_32nbkb
+INFO-FLOW: To file: write model run_fmul_32ns_32ncud
+INFO-FLOW: To file: write model run_mux_32_32_1_1
+INFO-FLOW: To file: write model run_fcmp_32ns_32ndEe
+INFO-FLOW: To file: write model Conv2_layer_conv2eOg
+INFO-FLOW: To file: write model Conv2_layer_conv2fYi
+INFO-FLOW: To file: write model Conv2_layer_conv2g8j
+INFO-FLOW: To file: write model Conv2_layer_conv2hbi
+INFO-FLOW: To file: write model Conv2_layer_conv2ibs
+INFO-FLOW: To file: write model Conv2_layer_conv2jbC
+INFO-FLOW: To file: write model Conv2_layer_conv2kbM
+INFO-FLOW: To file: write model Conv2_layer_conv2lbW
+INFO-FLOW: To file: write model Conv2_layer_conv2mb6
+INFO-FLOW: To file: write model Conv2_layer_conv2ncg
+INFO-FLOW: To file: write model Conv2_layer_conv2ocq
+INFO-FLOW: To file: write model Conv2_layer_conv2pcA
+INFO-FLOW: To file: write model Conv2_layer_conv2qcK
+INFO-FLOW: To file: write model Conv2_layer_conv2rcU
+INFO-FLOW: To file: write model Conv2_layer_conv2sc4
+INFO-FLOW: To file: write model Conv2_layer_conv2tde
+INFO-FLOW: To file: write model Conv2_layer_conv2udo
+INFO-FLOW: To file: write model Conv2_layer_conv2vdy
+INFO-FLOW: To file: write model Conv2_layer_conv2wdI
+INFO-FLOW: To file: write model Conv2_layer_conv2xdS
+INFO-FLOW: To file: write model Conv2_layer_conv2yd2
+INFO-FLOW: To file: write model Conv2_layer_conv2zec
+INFO-FLOW: To file: write model Conv2_layer_conv2Aem
+INFO-FLOW: To file: write model Conv2_layer_conv2Bew
+INFO-FLOW: To file: write model Conv2_layer_conv2CeG
+INFO-FLOW: To file: write model Conv2_layer_conv2DeQ
+INFO-FLOW: To file: write model Conv2_layer_conv2Ee0
+INFO-FLOW: To file: write model Conv2_layer_conv2Ffa
+INFO-FLOW: To file: write model Conv2_layer_conv2Gfk
+INFO-FLOW: To file: write model Conv2_layer_conv2Hfu
+INFO-FLOW: To file: write model Conv2_layer_conv2IfE
+INFO-FLOW: To file: write model Conv2_layer_conv2JfO
+INFO-FLOW: To file: write model Conv2_layer_conv2KfY
+INFO-FLOW: To file: write model Conv2_layer_conv2Lf8
+INFO-FLOW: To file: write model Conv2_layer_conv2Mgi
+INFO-FLOW: To file: write model Conv2_layer_conv2Ngs
+INFO-FLOW: To file: write model Conv2_layer_conv2OgC
+INFO-FLOW: To file: write model Conv2_layer_conv2PgM
+INFO-FLOW: To file: write model Conv2_layer_conv2QgW
+INFO-FLOW: To file: write model Conv2_layer_conv2Rg6
+INFO-FLOW: To file: write model Conv2_layer_conv2Shg
+INFO-FLOW: To file: write model Conv2_layer_conv2Thq
+INFO-FLOW: To file: write model Conv2_layer_conv2UhA
+INFO-FLOW: To file: write model Conv2_layer_conv2VhK
+INFO-FLOW: To file: write model Conv2_layer_conv2WhU
+INFO-FLOW: To file: write model Conv2_layer_conv2Xh4
+INFO-FLOW: To file: write model Conv2_layer_conv2Yie
+INFO-FLOW: To file: write model Conv2_layer_conv2Zio
+INFO-FLOW: To file: write model Conv2_layer_conv20iy
+INFO-FLOW: To file: write model Conv2_layer_conv21iI
+INFO-FLOW: To file: write model Conv2_layer_conv22iS
+INFO-FLOW: To file: write model Conv2_layer_conv23i2
+INFO-FLOW: To file: write model Conv2_layer_conv24jc
+INFO-FLOW: To file: write model Conv2_layer_conv25jm
+INFO-FLOW: To file: write model Conv2_layer_conv26jw
+INFO-FLOW: To file: write model Conv2_layer_conv27jG
+INFO-FLOW: To file: write model Conv2_layer_conv28jQ
+INFO-FLOW: To file: write model Conv2_layer_conv29j0
+INFO-FLOW: To file: write model Conv2_layer_conv2bak
+INFO-FLOW: To file: write model Conv2_layer_conv2bbk
+INFO-FLOW: To file: write model Conv2_layer_conv2bck
+INFO-FLOW: To file: write model Conv2_layer_conv2bdk
+INFO-FLOW: To file: write model Conv2_layer_conv2bek
+INFO-FLOW: To file: write model Conv2_layer_conv2bfk
+INFO-FLOW: To file: write model Conv2_layer_conv2bgk
+INFO-FLOW: To file: write model Conv2_layer_conv2bhl
+INFO-FLOW: To file: write model Conv2_layer_conv2bil
+INFO-FLOW: To file: write model Conv2_layer_conv2bjl
+INFO-FLOW: To file: write model Conv2_layer_conv2bkl
+INFO-FLOW: To file: write model Conv2_layer_conv2bll
+INFO-FLOW: To file: write model Conv2_layer_conv2bml
+INFO-FLOW: To file: write model Conv2_layer_conv2bnm
+INFO-FLOW: To file: write model Conv2_layer_conv2bom
+INFO-FLOW: To file: write model Conv2_layer_conv2bpm
+INFO-FLOW: To file: write model Conv2_layer_conv2bqm
+INFO-FLOW: To file: write model Conv2_layer_conv2brm
+INFO-FLOW: To file: write model FC2_layer_fc2_wei
+INFO-FLOW: To file: write model FC2_layer_fc2_bias
+INFO-FLOW: To file: write model run_data
+INFO-FLOW: To file: write model run_conv1_input
+INFO-FLOW: To file: write model run_conv1_output
+INFO-FLOW: To file: write model run_pool1_output
+INFO-FLOW: To file: write model run_conv2_output
+INFO-FLOW: To file: write model run_pool2_output
+INFO-FLOW: To file: write model run_flatten_output
+INFO-FLOW: To file: write model run_fc1_output
+INFO-FLOW: To file: write model run_fc2_output
+INFO-FLOW: To file: write model run_fc1_wei
+INFO-FLOW: To file: write model run_fc1_bias
+INFO-FLOW: To file: write model Init
+INFO-FLOW: To file: write model Conv1_layer
+INFO-FLOW: To file: write model MaxPooling1_layer
+INFO-FLOW: To file: write model Conv2_layer
+INFO-FLOW: To file: write model MaxPooling2_layer
+INFO-FLOW: To file: write model Flatten_layer
+INFO-FLOW: To file: write model FC2_layer
+INFO-FLOW: To file: write model run
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d E:/FPGA/Xilinx/HLS/CNN/minst/solution1
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=15.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.compgen.tcl 
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2eOg_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2fYi_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2g8j_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2hbi_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2ibs_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2jbC_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2kbM_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2lbW_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2mb6_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2ncg_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2ocq_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2pcA_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2qcK_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2rcU_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2sc4_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2tde_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2udo_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2vdy_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2wdI_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2xdS_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2yd2_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2zec_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Aem_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Bew_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2CeG_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2DeQ_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Ee0_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Ffa_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Gfk_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Hfu_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2IfE_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2JfO_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2KfY_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Lf8_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Mgi_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Ngs_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2OgC_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2PgM_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2QgW_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Rg6_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Shg_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Thq_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2UhA_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2VhK_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2WhU_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Xh4_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Yie_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2Zio_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv20iy_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv21iI_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv22iS_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv23i2_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv24jc_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv25jm_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv26jw_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv27jG_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv28jQ_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv29j0_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bak_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bbk_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bck_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bdk_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bek_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bfk_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bgk_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bhl_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bil_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bjl_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bkl_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bll_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bml_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bnm_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bom_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bpm_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2bqm_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv2_layer_conv2brm_rom' using distributed ROMs.
+Command       ap_source done; 1.185 sec.
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.compgen.tcl 
+INFO: [RTMG 210-279] Implementing memory 'FC2_layer_fc2_wei_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'FC2_layer_fc2_bias_rom' using distributed ROMs.
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'run_data_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'run_conv1_input_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'run_conv1_output_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'run_pool1_output_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'run_conv2_output_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'run_pool2_output_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'run_flatten_output_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'run_fc1_output_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'run_fc2_output_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO: [RTMG 210-279] Implementing memory 'run_fc1_wei_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'run_fc1_bias_rom' using auto ROMs.
+Command       ap_source done; 0.362 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d E:/FPGA/Xilinx/HLS/CNN/minst/solution1
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=run xml_exists=0
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Init.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv1_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling1_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Conv2_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/MaxPooling2_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/Flatten_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/FC2_layer.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.compgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.constraint.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=6
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=2
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=101 #gSsdmPorts=6
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_export -xo 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.constraint.tcl 
+Execute       sc_get_clocks run 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/impl/misc/run_ap_fadd_2_full_dsp_32_ip.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/impl/misc/run_ap_fcmp_0_no_dsp_32_ip.tcl 
+Execute       source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/impl/misc/run_ap_fmul_0_max_dsp_32_ip.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 277.617 ; gain = 192.309
+INFO: [SYSC 207-301] Generating SystemC RTL for run.
+INFO: [VHDL 208-304] Generating VHDL RTL for run.
+INFO: [VLOG 209-307] Generating Verilog RTL for run.
+Command     autosyn done; 17.458 sec.
+Execute     get_part 
+Execute     get_config_export -sdx_tcl 
+Command   csynth_design done; 24.937 sec.
+Command ap_source done; 25.288 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/FPGA/Xilinx/HLS/CNN/minst/solution1 opened at Thu Feb 22 01:24:45 +0800 2024
+Execute     config_clock -quiet -name default -period 15 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 15ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     set_part xc7z020clg400-2 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-2'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_compile -no_signed_zeros=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+Execute     config_compile -unsafe_math_optimizations=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+Execute     config_sdx -optimization_level=none 
+Execute       get_config_export -vivado_synth_design_args 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_synth_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute       get_config_bind -effort 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -optimization_level' config_bind -effort=medium 
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_bind -effort=medium
+Execute       config_bind -effort=medium 
+Execute       get_config_schedule -effort 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_sdx -optimization_level=none 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+Execute       config_sdx -optimization_level=none 
+Execute         get_config_export -vivado_synth_design_args 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_synth_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute         get_config_bind -effort 
+Execute         get_config_schedule -effort 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -auto_prefix 
+Execute       get_config_rtl -enable_maxiConservative 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute         get_clock_period -default -name=default 
+Execute         config_clock -quiet -name default -uncertainty 1.875 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.875ns.
+Execute     config_schedule -effort=medium 
+Execute     config_schedule -relax_ii_for_timing=0 
+Command   open_solution done; 0.212 sec.
+Execute   cosim_design -trace_level all -tool xsim 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=15.000 (was NA)
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/tb_CNN.cpp 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/DataLoader.cpp 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/DataLoader.h 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/net_params.h 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/test.cpp 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/test.h 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/test_png1.txt 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+ERROR: [COSIM 212-366] Cannot delete directory  'sim/verilog': it is being used by another program. Please close the program and try again.
+Command   cosim_design done; error code: 2; 0.282 sec.
+Command ap_source done; error code: 1; 0.503 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/FPGA/Xilinx/HLS/CNN/minst/solution1 opened at Thu Feb 22 01:26:25 +0800 2024
+Execute     config_clock -quiet -name default -period 15 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 15ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     set_part xc7z020clg400-2 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-2'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_compile -no_signed_zeros=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+Execute     config_compile -unsafe_math_optimizations=0 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+Execute     config_sdx -optimization_level=none 
+Execute       get_config_export -vivado_synth_design_args 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_synth_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute       get_config_bind -effort 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -optimization_level' config_bind -effort=medium 
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_bind -effort=medium
+Execute       config_bind -effort=medium 
+Execute       get_config_schedule -effort 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_sdx -optimization_level=none 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+Execute       config_sdx -optimization_level=none 
+Execute         get_config_export -vivado_synth_design_args 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_synth_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute         get_config_bind -effort 
+Execute         get_config_schedule -effort 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -auto_prefix 
+Execute       get_config_rtl -enable_maxiConservative 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute         get_clock_period -default -name=default 
+Execute         config_clock -quiet -name default -uncertainty 1.875 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.875ns.
+Execute     config_schedule -effort=medium 
+Execute     config_schedule -relax_ii_for_timing=0 
+Command   open_solution done; 0.164 sec.
+Execute   cosim_design -trace_level all -tool xsim 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Vivado/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source D:/Vivado/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Vivado/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=15.000 (was NA)
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/tb_CNN.cpp 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/DataLoader.cpp 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/DataLoader.h 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/net_params.h 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/test.cpp 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/test.h 
+Execute     is_encrypted E:/FPGA/Xilinx/HLS/CNN/minst/source/test_png1.txt 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     get_default_platform 
+INFO-FLOW: TB processing: E:/FPGA/Xilinx/HLS/CNN/minst/source/tb_CNN.cpp E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/tb_CNN.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/tb_CNN.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/tb_CNN.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 0.13 sec.
+INFO-FLOW: Marker-Pragma convertor: E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/tb_CNN.cpp_pre.cpp E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/tb_CNN.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/tb_CNN.cpp_pre.cpp.tb.cpp.line E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/tb_CNN.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute     get_default_platform 
+INFO-FLOW: TB processing: E:/FPGA/Xilinx/HLS/CNN/minst/source/DataLoader.cpp E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/DataLoader.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/DataLoader.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/DataLoader.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 0.133 sec.
+INFO-FLOW: Marker-Pragma convertor: E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/DataLoader.cpp_pre.cpp E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/DataLoader.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/DataLoader.cpp_pre.cpp.tb.cpp.line E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/DataLoader.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute     get_default_platform 
+INFO-FLOW: TB processing: E:/FPGA/Xilinx/HLS/CNN/minst/source/test.cpp E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/test.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/test.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec D:/Vivado/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/test.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 0.133 sec.
+INFO-FLOW: Marker-Pragma convertor: E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/test.cpp_pre.cpp E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/test.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/test.cpp_pre.cpp.tb.cpp.line E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/test.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/./sim/autowrap/testbench/tb.status.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.rtl_wrap.cfg.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     get_default_platform 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.107 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     get_default_platform 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source E:/FPGA/Xilinx/HLS/CNN/minst/solution1/.autopilot/db/run.tbgen.tcl 
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 96.526 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 117.16 sec.
+Command ap_source done; 117.327 sec.
+Execute cleanup_all 

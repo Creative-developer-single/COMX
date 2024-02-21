@@ -1,0 +1,62 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Init'" level="0">
+<item name = "Date">Thu Feb 22 01:24:10 2024
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">minst</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">15.00, 5.542, 1.88</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">4700, 4700, 4700, 4700, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">1624, 1624, 58, -, -, 28, no</column>
+<column name=" + Loop 1.1">56, 56, 2, -, -, 28, no</column>
+<column name="- Loop 2">1878, 1878, 626, -, -, 3, no</column>
+<column name=" + Loop 2.1">624, 624, 26, -, -, 24, no</column>
+<column name="  ++ Loop 2.1.1">24, 24, 1, -, -, 24, no</column>
+<column name="- Loop 3">510, 510, 170, -, -, 3, no</column>
+<column name=" + Loop 3.1">168, 168, 14, -, -, 12, no</column>
+<column name="  ++ Loop 3.1.1">12, 12, 1, -, -, 12, no</column>
+<column name="- Loop 4">410, 410, 82, -, -, 5, no</column>
+<column name=" + Loop 4.1">80, 80, 10, -, -, 8, no</column>
+<column name="  ++ Loop 4.1.1">8, 8, 1, -, -, 8, no</column>
+<column name="- Loop 5">130, 130, 26, -, -, 5, no</column>
+<column name=" + Loop 5.1">24, 24, 6, -, -, 4, no</column>
+<column name="  ++ Loop 5.1.1">4, 4, 1, -, -, 4, no</column>
+<column name="- Loop 6">80, 80, 1, -, -, 80, no</column>
+<column name="- Loop 7">50, 50, 1, -, -, 50, no</column>
+<column name="- Loop 8">10, 10, 1, -, -, 10, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

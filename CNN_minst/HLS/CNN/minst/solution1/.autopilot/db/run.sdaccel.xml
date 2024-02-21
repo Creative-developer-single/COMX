@@ -1,0 +1,230 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'run'" level="0">
+<item name = "Date">Thu Feb 22 01:24:19 2024
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">minst</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">15.00</item>
+<item name = "Clock uncertainty (ns)">1.88</item>
+<item name = "Estimated clock period (ns)">12.646</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">2, 78763, 2, 78763, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_Conv2_layer_fu_382">Conv2_layer, 12220, 12220, 12220, 12220, none</column>
+<column name="grp_Conv1_layer_fu_542">Conv1_layer, 22558, 22558, 22558, 22558, none</column>
+<column name="grp_FC2_layer_fu_550">FC2_layer, 3582, 3582, 3582, 3582, none</column>
+<column name="grp_MaxPooling1_layer_fu_563">MaxPooling1_layer, 6127, 6127, 6127, 6127, none</column>
+<column name="grp_MaxPooling2_layer_fu_571">MaxPooling2_layer, 1171, 1171, 1171, 1171, none</column>
+<column name="grp_Init_fu_579">Init, 4700, 4700, 4700, 4700, none</column>
+<column name="grp_Flatten_layer_fu_601">Flatten_layer, 42, 42, 42, 42, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- FC1_layer_label2">28350, 28350, 567, -, -, 50, no</column>
+<column name=" + FC1_layer_label5">560, 560, 7, -, -, 80, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 187</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">1, 30, 11256, 8864</column>
+<column name="Memory">25, -, 64, 5</column>
+<column name="Multiplexer">-, -, -, 139</column>
+<column name="Register">-, -, 327, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">9, 13, 10, 17</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="grp_Conv1_layer_fu_542">Conv1_layer, 0, 10, 2157, 2409</column>
+<column name="grp_Conv2_layer_fu_382">Conv2_layer, 0, 10, 7289, 2954</column>
+<column name="grp_FC2_layer_fu_550">FC2_layer, 1, 5, 704, 1109</column>
+<column name="grp_Flatten_layer_fu_601">Flatten_layer, 0, 0, 59, 270</column>
+<column name="grp_Init_fu_579">Init, 0, 0, 245, 315</column>
+<column name="grp_MaxPooling1_layer_fu_563">MaxPooling1_layer, 0, 0, 202, 457</column>
+<column name="grp_MaxPooling2_layer_fu_571">MaxPooling2_layer, 0, 0, 179, 387</column>
+<column name="run_fadd_32ns_32nbkb_U143">run_fadd_32ns_32nbkb, 0, 2, 227, 404</column>
+<column name="run_fcmp_32ns_32ndEe_U145">run_fcmp_32ns_32ndEe, 0, 0, 66, 239</column>
+<column name="run_fmul_32ns_32ncud_U144">run_fmul_32ns_32ncud, 0, 3, 128, 320</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="conv1_input_U">run_conv1_input, 2, 0, 0, 784, 32, 1, 25088</column>
+<column name="conv1_output_U">run_conv1_output, 4, 0, 0, 1728, 32, 1, 55296</column>
+<column name="conv2_output_U">run_conv2_output, 1, 0, 0, 320, 32, 1, 10240</column>
+<column name="data_U">run_data, 2, 0, 0, 784, 32, 1, 25088</column>
+<column name="fc1_bias_U">run_fc1_bias, 1, 0, 0, 50, 32, 1, 1600</column>
+<column name="fc1_output_U">run_fc1_output, 1, 0, 0, 50, 32, 1, 1600</column>
+<column name="fc1_wei_U">run_fc1_wei, 8, 0, 0, 4000, 32, 1, 128000</column>
+<column name="fc2_output_U">run_fc2_output, 0, 64, 5, 10, 32, 1, 320</column>
+<column name="flatten_output_U">run_flatten_output, 2, 0, 0, 80, 32, 1, 2560</column>
+<column name="pool1_output_U">run_pool1_output, 2, 0, 0, 432, 32, 1, 13824</column>
+<column name="pool2_output_U">run_pool2_output, 2, 0, 0, 80, 32, 1, 2560</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_fu_725_p2">+, 0, 0, 6, 6, 1</column>
+<column name="k_fu_746_p2">+, 0, 0, 7, 7, 1</column>
+<column name="next_mul_fu_757_p2">+, 0, 0, 12, 12, 6</column>
+<column name="tmp_1_fu_644_p2">+, 0, 0, 32, 1, 32</column>
+<column name="tmp_5_fu_701_p2">+, 0, 0, 32, 32, 1</column>
+<column name="tmp_8_fu_684_p2">+, 0, 0, 11, 11, 11</column>
+<column name="tmp_s_fu_763_p2">+, 0, 0, 12, 12, 12</column>
+<column name="tmp_7_fu_678_p2">-, 0, 0, 11, 11, 11</column>
+<column name="ap_block_state27_on_subcall_done">and, 0, 0, 1, 1, 1</column>
+<column name="ap_condition_189">and, 0, 0, 1, 1, 1</column>
+<column name="exitcond1_i_fu_719_p2">icmp, 0, 0, 3, 6, 5</column>
+<column name="exitcond_i_fu_740_p2">icmp, 0, 0, 3, 7, 7</column>
+<column name="tmp_4_fu_695_p2">icmp, 0, 0, 12, 32, 5</column>
+<column name="tmp_fu_634_p2">icmp, 0, 0, 12, 32, 5</column>
+<column name="tmp_43_i_fu_773_p3">select, 0, 0, 32, 1, 32</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">10, 28, 1, 28</column>
+<column name="column_new_reg_338">3, 2, 32, 64</column>
+<column name="conv1_input_address0">3, 3, 10, 30</column>
+<column name="conv1_input_ce0">3, 3, 1, 3</column>
+<column name="conv1_input_ce1">3, 2, 1, 2</column>
+<column name="conv1_input_we0">3, 2, 1, 2</column>
+<column name="conv1_output_address0">3, 4, 11, 44</column>
+<column name="conv1_output_ce0">3, 4, 1, 4</column>
+<column name="conv1_output_d0">3, 3, 32, 96</column>
+<column name="conv1_output_we0">3, 3, 1, 3</column>
+<column name="conv2_output_address0">3, 4, 9, 36</column>
+<column name="conv2_output_ce0">3, 4, 1, 4</column>
+<column name="conv2_output_d0">3, 3, 32, 96</column>
+<column name="conv2_output_we0">3, 3, 1, 3</column>
+<column name="data_address0">3, 3, 10, 30</column>
+<column name="data_ce0">3, 3, 1, 3</column>
+<column name="fc1_output_address0">3, 4, 6, 24</column>
+<column name="fc1_output_ce0">3, 4, 1, 4</column>
+<column name="fc1_output_d0">3, 4, 32, 128</column>
+<column name="fc1_output_we0">3, 3, 1, 3</column>
+<column name="fc2_output_address0">3, 3, 4, 12</column>
+<column name="fc2_output_ce0">3, 3, 1, 3</column>
+<column name="fc2_output_d0">3, 3, 32, 96</column>
+<column name="fc2_output_we0">3, 3, 1, 3</column>
+<column name="flatten_output_address0">3, 4, 7, 28</column>
+<column name="flatten_output_ce0">3, 4, 1, 4</column>
+<column name="flatten_output_ce1">3, 2, 1, 2</column>
+<column name="flatten_output_d0">3, 3, 32, 96</column>
+<column name="flatten_output_we0">3, 3, 1, 3</column>
+<column name="flatten_output_we1">3, 2, 1, 2</column>
+<column name="grp_fu_609_p1">3, 3, 32, 96</column>
+<column name="i_i_reg_349">3, 2, 6, 12</column>
+<column name="k_i_reg_360">3, 2, 7, 14</column>
+<column name="phi_mul_reg_371">3, 2, 12, 24</column>
+<column name="pool1_output_address0">3, 4, 9, 36</column>
+<column name="pool1_output_ce0">3, 4, 1, 4</column>
+<column name="pool1_output_ce1">3, 2, 1, 2</column>
+<column name="pool1_output_d0">3, 3, 32, 96</column>
+<column name="pool1_output_we0">3, 3, 1, 3</column>
+<column name="pool2_output_address0">3, 4, 7, 28</column>
+<column name="pool2_output_ce0">3, 4, 1, 4</column>
+<column name="pool2_output_ce1">3, 2, 1, 2</column>
+<column name="pool2_output_d0">3, 3, 32, 96</column>
+<column name="pool2_output_we0">3, 3, 1, 3</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">27, 0, 27, 0</column>
+<column name="column">32, 0, 32, 0</column>
+<column name="column_new_reg_338">32, 0, 32, 0</column>
+<column name="fc1_output_addr_reg_811">6, 0, 6, 0</column>
+<column name="fc1_wei_load_reg_849">32, 0, 32, 0</column>
+<column name="flatten_output_load_reg_844">32, 0, 32, 0</column>
+<column name="grp_Conv1_layer_fu_542_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_Conv2_layer_fu_382_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_FC2_layer_fu_550_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_Flatten_layer_fu_601_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_Init_fu_579_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_MaxPooling1_layer_fu_563_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_MaxPooling2_layer_fu_571_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_i_reg_349">6, 0, 6, 0</column>
+<column name="i_reg_796">6, 0, 6, 0</column>
+<column name="k_i_reg_360">7, 0, 7, 0</column>
+<column name="k_reg_819">7, 0, 7, 0</column>
+<column name="next_mul_reg_824">12, 0, 12, 0</column>
+<column name="phi_mul_reg_371">12, 0, 12, 0</column>
+<column name="row">32, 0, 32, 0</column>
+<column name="tmp_45_i_reg_854">32, 0, 32, 0</column>
+<column name="tmp_i_3_reg_864">32, 0, 32, 0</column>
+<column name="tmp_i_cast_reg_806">6, 0, 12, 6</column>
+<column name="tmp_i_reg_801">6, 0, 64, 58</column>
+<column name="tmp_reg_781">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, run, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, run, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, run, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, run, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, run, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, run, return value</column>
+<column name="data_in">in, 32, ap_none, data_in, pointer</column>
+<column name="predict">out, 32, ap_vld, predict, pointer</column>
+<column name="predict_ap_vld">out, 1, ap_vld, predict, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">12.65</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'tmp_45_i', minst/source/test.cpp:240->minst/source/test.cpp:306">fmul, 12.65, 12.65, -, -, -, -, -, -, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

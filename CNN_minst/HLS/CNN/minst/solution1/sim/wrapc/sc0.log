@@ -1,0 +1,6 @@
+   Build using "D:/Vivado/Vivado/2018.3/msys64/mingw64/bin/g++"
+   Compiling apatb_run.cpp
+   Compiling test.cpp_pre.cpp.tb.cpp
+   Compiling tb_CNN.cpp_pre.cpp.tb.cpp
+   Compiling DataLoader.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

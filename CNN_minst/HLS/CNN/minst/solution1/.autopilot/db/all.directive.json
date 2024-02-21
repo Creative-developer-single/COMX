@@ -1,0 +1,23 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "Conv1_layer",
+          "label": "Conv1_layer_label0",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "Conv2_layer",
+          "label": "Conv2_layer_label12",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "Flatten_layer",
+          "label": "Flatten_layer_label4",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        }
+      ]
+    }]}

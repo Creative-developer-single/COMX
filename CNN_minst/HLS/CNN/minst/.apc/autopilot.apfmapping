@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="test_png1.txt" path="E:\FPGA\Xilinx\HLS\CNN\minst\source\test_png1.txt"/>
+    <originFiles name="test.h" path="E:\FPGA\Xilinx\HLS\CNN\minst\source\test.h"/>
+    <originFiles name="test.cpp" path="E:\FPGA\Xilinx\HLS\CNN\minst\source\test.cpp"/>
+    <originFiles name="net_params.h" path="E:\FPGA\Xilinx\HLS\CNN\minst\source\net_params.h"/>
+    <originFiles name="DataLoader.h" path="E:\FPGA\Xilinx\HLS\CNN\minst\source\DataLoader.h"/>
+    <originFiles name="DataLoader.cpp" path="E:\FPGA\Xilinx\HLS\CNN\minst\source\DataLoader.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_CNN.cpp" path="E:\FPGA\Xilinx\HLS\CNN\minst\source\tb_CNN.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

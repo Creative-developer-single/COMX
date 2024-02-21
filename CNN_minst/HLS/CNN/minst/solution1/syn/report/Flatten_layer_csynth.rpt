@@ -1,0 +1,195 @@
+
+
+================================================================
+== Vivado HLS Report for 'Flatten_layer'
+================================================================
+* Date:           Thu Feb 22 01:24:18 2024
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        minst
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  15.00|     5.542|        1.88|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   42|   42|   42|   42|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                        |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |        Loop Name       | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Flatten_layer_label4  |   40|   40|         9|          8|          1|     5|    yes   |
+        +------------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|    232|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     38|
+|Register         |        -|      -|      59|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|      59|    270|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |channels_7_fu_391_p2  |     +    |      0|  0|   4|           3|           1|
+    |cnt_1_fu_782_p2       |     +    |      0|  0|   7|           7|           5|
+    |tmp_1_fu_656_p2       |     +    |      0|  0|   8|           8|           3|
+    |tmp_38_0_1_fu_500_p2  |     +    |      0|  0|   8|           8|           1|
+    |tmp_38_1_1_fu_603_p2  |     +    |      0|  0|   8|           8|           1|
+    |tmp_38_2_1_fu_706_p2  |     +    |      0|  0|   8|           8|           3|
+    |tmp_38_2_2_fu_711_p2  |     +    |      0|  0|   8|           8|           3|
+    |tmp_38_2_fu_662_p2    |     +    |      0|  0|   8|           8|           3|
+    |tmp_38_3_1_fu_791_p2  |     +    |      0|  0|   8|           8|           1|
+    |exitcond2_fu_385_p2   |   icmp   |      0|  0|   2|           3|           3|
+    |tmp_2_fu_754_p2       |    or    |      0|  0|   7|           7|           4|
+    |tmp_38_0_2_fu_506_p2  |    or    |      0|  0|   7|           7|           2|
+    |tmp_38_0_s_fu_453_p2  |    or    |      0|  0|   7|           7|           1|
+    |tmp_38_1_2_fu_609_p2  |    or    |      0|  0|   7|           7|           3|
+    |tmp_38_1_s_fu_556_p2  |    or    |      0|  0|   7|           7|           3|
+    |tmp_38_3_2_fu_776_p2  |    or    |      0|  0|   7|           7|           4|
+    |tmp_38_3_s_fu_760_p2  |    or    |      0|  0|   7|           7|           4|
+    |tmp_52_fu_410_p2      |    or    |      0|  0|   7|           7|           1|
+    |tmp_54_fu_425_p2      |    or    |      0|  0|   7|           7|           2|
+    |tmp_56_fu_439_p2      |    or    |      0|  0|   7|           7|           2|
+    |tmp_58_fu_469_p2      |    or    |      0|  0|   7|           7|           3|
+    |tmp_60_fu_483_p2      |    or    |      0|  0|   7|           7|           3|
+    |tmp_62_fu_522_p2      |    or    |      0|  0|   7|           7|           3|
+    |tmp_64_fu_536_p2      |    or    |      0|  0|   7|           7|           3|
+    |tmp_66_fu_572_p2      |    or    |      0|  0|   7|           7|           4|
+    |tmp_68_fu_586_p2      |    or    |      0|  0|   7|           7|           4|
+    |tmp_70_fu_625_p2      |    or    |      0|  0|   7|           7|           4|
+    |tmp_72_fu_639_p2      |    or    |      0|  0|   7|           7|           4|
+    |tmp_74_fu_678_p2      |    or    |      0|  0|   7|           7|           4|
+    |tmp_76_fu_692_p2      |    or    |      0|  0|   7|           7|           4|
+    |tmp_78_fu_726_p2      |    or    |      0|  0|   7|           7|           4|
+    |tmp_80_fu_740_p2      |    or    |      0|  0|   7|           7|           4|
+    |tmp_s_fu_550_p2       |    or    |      0|  0|   7|           7|           3|
+    |ap_enable_pp0         |    xor   |      0|  0|   2|           1|           2|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |Total                 |          |      0|  0| 232|         231|          99|
+    +----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------+----+-----------+-----+-----------+
+    |                Name               | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                          |   6|         11|    1|         11|
+    |ap_enable_reg_pp0_iter1            |   3|          2|    1|          2|
+    |ap_phi_mux_channels_phi_fu_366_p4  |   3|          2|    3|          6|
+    |channels_reg_362                   |   3|          2|    3|          6|
+    |cnt_reg_373                        |   3|          2|    7|         14|
+    |flatten_output_address0            |   5|          9|    7|         63|
+    |flatten_output_address1            |   5|          9|    7|         63|
+    |pool2_output_address0              |   5|          9|    7|         63|
+    |pool2_output_address1              |   5|          9|    7|         63|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |Total                              |  38|         55|   43|        291|
+    +-----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |  10|   0|   10|          0|
+    |ap_enable_reg_pp0_iter0  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |channels_7_reg_810       |   3|   0|    3|          0|
+    |channels_reg_362         |   3|   0|    3|          0|
+    |cnt_reg_373              |   7|   0|    7|          0|
+    |exitcond2_reg_806        |   1|   0|    1|          0|
+    |tmp_38_0_s_reg_853       |   6|   0|    7|          1|
+    |tmp_38_1_s_reg_883       |   5|   0|    7|          2|
+    |tmp_38_3_2_reg_939       |   3|   0|    7|          4|
+    |tmp_38_3_s_reg_934       |   4|   0|    7|          3|
+    |tmp_cast4_reg_908        |   6|   0|    8|          2|
+    |tmp_reg_815              |   3|   0|    7|          4|
+    |tmp_s_reg_878            |   6|   0|    7|          1|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  59|   0|   76|         17|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+----------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++-------------------------+-----+-----+------------+----------------+--------------+
+|ap_clk                   |  in |    1| ap_ctrl_hs |  Flatten_layer | return value |
+|ap_rst                   |  in |    1| ap_ctrl_hs |  Flatten_layer | return value |
+|ap_start                 |  in |    1| ap_ctrl_hs |  Flatten_layer | return value |
+|ap_done                  | out |    1| ap_ctrl_hs |  Flatten_layer | return value |
+|ap_idle                  | out |    1| ap_ctrl_hs |  Flatten_layer | return value |
+|ap_ready                 | out |    1| ap_ctrl_hs |  Flatten_layer | return value |
+|pool2_output_address0    | out |    7|  ap_memory |  pool2_output  |     array    |
+|pool2_output_ce0         | out |    1|  ap_memory |  pool2_output  |     array    |
+|pool2_output_q0          |  in |   32|  ap_memory |  pool2_output  |     array    |
+|pool2_output_address1    | out |    7|  ap_memory |  pool2_output  |     array    |
+|pool2_output_ce1         | out |    1|  ap_memory |  pool2_output  |     array    |
+|pool2_output_q1          |  in |   32|  ap_memory |  pool2_output  |     array    |
+|flatten_output_address0  | out |    7|  ap_memory | flatten_output |     array    |
+|flatten_output_ce0       | out |    1|  ap_memory | flatten_output |     array    |
+|flatten_output_we0       | out |    1|  ap_memory | flatten_output |     array    |
+|flatten_output_d0        | out |   32|  ap_memory | flatten_output |     array    |
+|flatten_output_address1  | out |    7|  ap_memory | flatten_output |     array    |
+|flatten_output_ce1       | out |    1|  ap_memory | flatten_output |     array    |
+|flatten_output_we1       | out |    1|  ap_memory | flatten_output |     array    |
+|flatten_output_d1        | out |   32|  ap_memory | flatten_output |     array    |
++-------------------------+-----+-----+------------+----------------+--------------+
+
